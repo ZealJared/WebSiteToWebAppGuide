@@ -63,7 +63,7 @@ Your database software will set values for each of these fields automatically. Y
 
 We'll be using the database software MariaDB. MariaDB is a modified version of another software called MySQL. The two are so similar, many of the tools that work with one also work with the other. Anywhere in this guide that you see 'MySQL', know that it's a tool that also works with MariaDB.
 
-MariaDB is a 'relational' database which means that objects stored in different tables can contain references to each other, making it possible to easily find related data. For example, I may want to find `all posts published by user #1`. Relational databases use a 'query' language. That is, a special set of words and function to search for and retrieve data stored in the database.
+MariaDB is a 'relational' database which means that objects stored in different tables can contain references to each other, making it possible to easily find related data. For example, I may want to find `all posts published by user #1`. Relational databases use a 'query' language. That is, a special set of words and functions to search for and retrieve data stored in the database.
 
 The language used by MariaDB is SQL (Structured Query Language). SQL is fairly easy to begin learning, and its use is incredibly widespread. It includes many functions for formatting and transforming data. If you are a spreadsheets power-user, you may be familiar with many similar or identical functions. Even for beginners, SQL is approachable and fun.
 
@@ -80,6 +80,7 @@ Finally, because we are using a relational database, we will describe how object
     * id
     * created_at
     * updated_at
+    * title
     * content
     * __user_id__: (this will store the value of 'id' for the user that created this post)
 
